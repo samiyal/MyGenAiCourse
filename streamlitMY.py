@@ -9,8 +9,7 @@ st.markdown(
   """,
   unsafe_allow_html=True,
 )
-robo = genai.Client(api_key=st.secrets["AQ.Ab8RN6Lo_ViTdHjXfWvee9rKSex5iJKqmtriyy14bLPmM0xmkg"])
-
+robo = genai.Client(api_key="AQ.Ab8RN6Lo_ViTdHjXfWvee9rKSex5iJKqmtriyy14bLPmM0xmkg")
 mychat = robo.chats.create(model="gemini-flash-lite-latest")
 #Placeholder for the response
 response_placeholder = st.empty()
